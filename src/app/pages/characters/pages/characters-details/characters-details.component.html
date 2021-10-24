@@ -1,1 +1,10 @@
-<p>characters-details works!</p>
+<div class='card'>
+    <h2 class="card__title">{{character.name}}</h2>
+    <img src="{{character.image}}" alt="{{character.name}}">
+    <p class="card__p">Status: {{character.status}}</p>
+    <p *ngIf="character.type" class="card__p">{{character.type}}</p>
+    <p class="card__p">Gender: {{character.gender}}</p>
+    <p class="card__p">Origin: {{character.origin.name}}</p>
+    <p class="card__p">Location: {{character.location.name}}</p>
+
+</div>

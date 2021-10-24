@@ -1,0 +1,20 @@
+.menu {
+    background-color: black;
+    padding:20px 5px;
+    margin-top: 20px;
+}
+
+.menu__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.menu__a {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    
+
+}
