@@ -13,7 +13,7 @@ export class EpisodesComponent implements OnInit {
   constructor( private episodesService: EpisodesService) { }
 
   ngOnInit(): void {
-    this.episodesService.getLocations().subscribe((episodes)=>{
+    this.episodesService.getEpisodes().subscribe((episodes)=>{
       this.episodesList=episodes;
       this.episodesList=this.episodesList.results;
       console.log(this.episodesList)
