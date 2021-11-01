@@ -1,3 +1,14 @@
+.btn_back {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.btn_back__button {
+    background-color: rgba(87, 87, 75, 0.986);
+    color: white;
+    font-family: monospace;
+}
 .card {
     display: flex;
     flex-direction: column;

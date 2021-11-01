@@ -1,1 +1,4 @@
 <app-characters-gallery [charactersList]="charactersList"></app-characters-gallery>
+<div class='pages_div'>
+    <div *ngFor="let item of pages" class='pages' (click)=changePage($event)>{{item}}</div>
+</div>

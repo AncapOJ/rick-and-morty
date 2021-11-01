@@ -8,7 +8,7 @@ export class LocationsService {
 
   constructor(private http:HttpClient) { }
 
-  getLocations() {
-    return this.http.get('https://rickandmortyapi.com/api/location')
+  getLocations(page:string) {
+    return this.http.get('https://rickandmortyapi.com/api/location?page='+page)
   }
 }

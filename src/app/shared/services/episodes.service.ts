@@ -8,7 +8,7 @@ export class EpisodesService {
 
   constructor(private http:HttpClient) { }
 
-  getEpisodes() {
-    return this.http.get('https://rickandmortyapi.com/api/episode')
+  getEpisodes(page:string) {
+    return this.http.get('https://rickandmortyapi.com/api/episode/?page='+page)
   }
 }

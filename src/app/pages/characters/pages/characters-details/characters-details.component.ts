@@ -26,7 +26,8 @@ export class CharactersDetailsComponent implements OnInit {
         this.character =character;
         console.log(this.character)
       });
-    });
+    }); 
   }
+
 
 }
