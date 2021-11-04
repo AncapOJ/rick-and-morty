@@ -1,0 +1,13 @@
+<div class='card'>
+    <h2 class='card__title'>{{episode.name}}</h2>
+    <p class='card__p'>Air date: {{episode.air_date}}</p>
+    <p class='card__p'>Episode: {{episode.episode}}</p>
+
+</div>
+<div class='gallery'>
+    <div *ngFor="let item of characters" routerLink ='/characters/{{item.id}}' class='gallery__card'>
+        <h2 class="card__title">{{item.name}}</h2>
+        <img src="{{item.image}}" alt="{{item.name}}">
+
+    </div>
+</div>

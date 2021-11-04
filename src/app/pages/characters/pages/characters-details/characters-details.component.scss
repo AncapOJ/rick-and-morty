@@ -26,3 +26,26 @@
     font-family: monospace;
     color:white;
 }
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        color: yellowgreen;
+        font-family: monospace;
+    }
+}
+.episodes__ul {
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    
+    li {
+        &:hover {
+            text-decoration: underline white;
+        }
+    }
+}

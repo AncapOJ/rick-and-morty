@@ -1,8 +1,8 @@
 <div>
-    <div *ngFor="let item of episodesList" class='card'>
+    <div *ngFor="let item of episodesList" class='card' routerLink='/episodes/{{item.id}}'>
         <h2 class='card__title'>{{item.name}}</h2>
         <p class='card__p'>Air date: {{item.air_date}}</p>
         <p class='card__p'>Episode: {{item.episode}}</p>
 
     </div>
-</div>
+</div> 

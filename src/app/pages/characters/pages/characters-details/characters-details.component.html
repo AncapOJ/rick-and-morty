@@ -12,3 +12,11 @@
     <p class="card__p">Location: {{character.location.name}}</p>
 
 </div> 
+
+<div class='episodes'>
+    <h3>Episodes:</h3>
+    <ul *ngFor ='let item of episodes' class='episodes__ul'>
+        <li routerLink='/episodes/{{item.id}}'>{{item.name}}</li>
+
+    </ul>
+</div>

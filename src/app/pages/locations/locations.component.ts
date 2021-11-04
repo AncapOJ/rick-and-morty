@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactersService } from 'src/app/shared/services/characters.service';
+import { IsLoadingServiceService } from 'src/app/shared/services/local/is-loading-service.service';
 import { LocationsService } from 'src/app/shared/services/locations.service';
 
 @Component({
@@ -16,16 +17,19 @@ export class LocationsComponent implements OnInit {
   page:string='1';
   pages=[1,2,3,4,5,6];
 
-  constructor(private charactersService: CharactersService, private locationsService: LocationsService) { }
+  constructor(private isLoadingServiceService: IsLoadingServiceService, private charactersService: CharactersService, private locationsService: LocationsService) { }
 
   ngOnInit(): void {
 
+    this.isLoadingServiceService.setIsLoading(true);
+
     this.locationsService.getLocations(this.page).subscribe((locations)=>{
+      this.isLoadingServiceService.setIsLoading(false);
       this.locationsList=locations;
       this.locationsList=this.locationsList.results;
       console.log(this.locationsList)
 
-    // let esther = async() =>{
+    // let charactersInLocations = async() =>{
     //   for (let item of this.locationsList){
     //     for(let i of item.residents){
     //       await this.charactersService.getCharacterByURL(i).subscribe(character => {

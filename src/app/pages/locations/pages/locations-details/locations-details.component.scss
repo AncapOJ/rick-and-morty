@@ -1,0 +1,51 @@
+.card, .gallery {
+    color:white;
+    font-family: monospace;
+}
+.card {
+    color: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__title {
+    font-size: 2rem;
+}
+.gallery {
+    color:white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h3 {
+        max-width: 230px;
+        text-align: center;
+        
+    }
+    img{
+        max-width: 250px;
+    }
+}
+
+.residents {
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+.gallery__card {
+    margin: 15px;
+    border: 1px solid white;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.315);
+        transform: scale(1.1);
+    }
+}

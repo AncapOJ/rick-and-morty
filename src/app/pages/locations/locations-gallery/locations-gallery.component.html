@@ -1,5 +1,5 @@
 <div>
-    <div *ngFor="let item of locationsList" class='card'>
+    <div *ngFor="let item of locationsList" class='card' routerLink='/locations/{{item.id}}'>
         <h2 class='card__title'>{{item.name}}</h2>
         <p class='card__p'>Type: {{item.name}}</p>
         <p class='card__p'>Dimension: {{item.dimension}}</p>
