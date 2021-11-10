@@ -12,6 +12,7 @@ export class CharactersComponent implements OnInit {
 
   charactersList:any=[];
   page:string='1';
+  name:string='';
   pages=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34];
   
   constructor(private isLoadingServiceService:IsLoadingServiceService,private charactersService:CharactersService) { }
@@ -20,7 +21,7 @@ export class CharactersComponent implements OnInit {
 
     this.isLoadingServiceService.setIsLoading(true);
 
-    this.charactersService.getCharacters(this.page).subscribe((characters)=> {
+    this.charactersService.getCharacters(this.page,this.name).subscribe((characters)=> {
       this.isLoadingServiceService.setIsLoading(false);
       this.charactersList=characters;
       this.charactersList=this.charactersList.results;

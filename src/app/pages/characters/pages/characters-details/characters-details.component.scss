@@ -27,6 +27,14 @@
     color:white;
 }
 
+.link {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .episodes {
     display: flex;
     flex-direction: column;

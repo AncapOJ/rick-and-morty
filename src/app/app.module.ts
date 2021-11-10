@@ -6,6 +6,7 @@ import { MenuComponent } from './core/components/menu/menu.component';
 import { HttpClientModule} from '@angular/common/http';
 import { LoadingComponent } from './core/components/loading/loading.component';
 import { CopyrightComponent } from './core/components/copyright/copyright.component';
+import { SearchComponent } from './core/components/search/search.component';
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -15,6 +16,7 @@ import { CopyrightComponent } from './core/components/copyright/copyright.compon
     MenuComponent,
     LoadingComponent,
     CopyrightComponent,
+    SearchComponent,
     
   ],
   imports: [

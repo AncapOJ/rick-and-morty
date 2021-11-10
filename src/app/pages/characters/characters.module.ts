@@ -7,15 +7,19 @@ import { CharactersDetailsComponent } from './pages/characters-details/character
 import { CharactersGalleryComponent } from './characters-gallery/characters-gallery.component';
 
 
+
 @NgModule({
   declarations: [
     CharactersComponent,
     CharactersDetailsComponent,
     CharactersGalleryComponent
+  
+    
   ],
   imports: [
     CommonModule,
     CharactersRoutingModule
+ 
   ]
 })
 export class CharactersModule { }
